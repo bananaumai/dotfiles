@@ -1,0 +1,31 @@
+# vim
+*.sw[a-z]
+*.un~
+Session.vim
+
+# IntelliJ
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Ruby
+.bundle/
+.rspec
+
+# misc
+*.log.gz
+*.orig
+.DS_Store
+.DS_Store?
+.Spotlight-V100
+.Trashes
+._*
+tags
+.tags
+Icon?
+Thumbs.db
+ehthumbs.db
+*~*
+.cache
+nohup.out
