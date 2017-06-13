@@ -6,4 +6,4 @@ rbenv init - | source
 pyenv init - | source
 goenv init - | source
 
-set -x PATH $HOME/.rbenv/shims $HOME/.pyenv/shims $HOME/.goenv/shims $PATH
+set -x PATH $HOME/.local/bin $HOME/.rbenv/shims $HOME/.pyenv/shims $HOME/.goenv/shims $PATH
