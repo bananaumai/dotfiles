@@ -12,6 +12,8 @@ Session.vim
 # Ruby
 .bundle/
 .rspec
+.pryrc
+.invorker.ini
 
 # misc
 *.log.gz
@@ -29,3 +31,4 @@ ehthumbs.db
 *~*
 .cache
 nohup.out
+.envrc

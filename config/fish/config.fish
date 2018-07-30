@@ -2,11 +2,13 @@ function fish_user_key_bindings
   bind \cr 'peco_select_history (commandline -b)'
 end
 
+set -x GOPATH $HOME/go
+set -x PATH $HOME/.local/bin $HOME/.rbenv/shims $HOME/.goenv/bin $HOME/.pyenv/shims $GOPATH/bin $PATH
+
 rbenv init - | source
 pyenv init - | source
+status --is-interactive; and source (nodenv init -|psub)
 eval (direnv hook fish)
+goenv rehash > /dev/null ^&1
 
-set -x PATH $HOME/.local/bin $HOME/.rbenv/shims $HOME/.pyenv/shims $HOME/.nodebrew/current/bin $HOME/go/bin $HOME/.cargo/bin $PATH
-
-set -x GOPATH $HOME/go
-set -x GOROOT /usr/local/Cellar/go/1.8.1/libexec
+alias g='git'
