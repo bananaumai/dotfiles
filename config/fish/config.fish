@@ -3,7 +3,7 @@ function fish_user_key_bindings
 end
 
 set -x GOPATH $HOME/go
-set -x PATH $HOME/bin $HOME/.local/bin $HOME/.rbenv/shims $HOME/.goenv/bin $HOME/.pyenv/shims $GOPATH/bin $PATH
+set -x PATH $HOME/bin $HOME/.local/bin $HOME/.cargo/bin $HOME/.rbenv/shims $HOME/.goenv/bin $HOME/.pyenv/shims $GOPATH/bin $PATH
 
 rbenv init - | source
 pyenv init - | source
