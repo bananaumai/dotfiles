@@ -9,6 +9,5 @@ rbenv init - | source
 pyenv init - | source
 status --is-interactive; and source (nodenv init -|psub)
 eval (direnv hook fish)
-goenv rehash > /dev/null ^&1
 
 alias g='git'
