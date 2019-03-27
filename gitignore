@@ -9,6 +9,9 @@ Session.vim
 *.iws
 .idea/
 
+# vscode
+.vscode
+
 # Ruby
 .bundle/
 .rspec
