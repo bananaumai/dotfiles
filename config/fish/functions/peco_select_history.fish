@@ -5,12 +5,11 @@ function peco_select_history
     set peco_flags --layout=bottom-up --query "$argv"
   end
 
-history|peco $peco_flags|read foo
+  history|peco $peco_flags|read foo
 
-if [ $foo ]
+  if [ $foo ]
     commandline $foo
   else
     commandline ''
   end
 end
-
