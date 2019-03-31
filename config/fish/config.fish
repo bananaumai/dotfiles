@@ -25,6 +25,12 @@ status --is-interactive; and source (nodenv init -|psub)
 # rust setting
 set -x PATH $HOME/.cargo/bin $PATH
 
+# android development setting
+if [ (uname) = "Darwin" ]
+  set ANDROID_SDK_PATH $HOME/Library/Android/sdk
+  set -x PATH $ANDROID_SDK_PATH/platform-tools $ANDROID_SDK_PATH/tools/bin $PATH
+end
+
 # alias
 alias g='git'
 
