@@ -17,6 +17,17 @@ Session.vim
 .rspec
 .pryrc
 .invorker.ini
+.ruby-version
+
+# Go
+.go-version
+
+# Node
+.node-version
+
+# Direnv
+.envrc
+.env
 
 # misc
 *.log.gz
@@ -34,5 +45,3 @@ ehthumbs.db
 *~*
 .cache
 nohup.out
-.envrc
-.env
