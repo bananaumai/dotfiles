@@ -6,8 +6,8 @@ eval (direnv hook fish)
 
 # go setting
 set -x GOENV_ROOT $HOME/.goenv
-goenv init - | source
 set -x PATH $GOPATH/bin $GOENV_ROOT/bin $GOENV_ROOT/shims $PATH
+goenv init - | source
 
 # ruby setting
 set -x PATH $HOME/.rbenv/shims $PATH
