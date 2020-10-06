@@ -26,3 +26,8 @@
   path = ~/.gitconfig.local
 [url "ssh://git@github.com/moderepo/"]
 	insteadOf = https://github.com/moderepo/
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

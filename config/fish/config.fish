@@ -6,8 +6,8 @@ eval (direnv hook fish)
 
 # go setting
 set -x GOENV_ROOT $HOME/.goenv
-goenv init - | source
 set -x PATH $GOPATH/bin $GOENV_ROOT/bin $GOENV_ROOT/shims $PATH
+goenv init - | source
 
 # ruby setting
 set -x PATH $HOME/.rbenv/shims $PATH
@@ -23,12 +23,6 @@ status --is-interactive; and source (nodenv init -|psub)
 
 # rust setting
 set -x PATH $HOME/.cargo/bin $PATH
-
-# android development setting
-if [ (uname) = "Darwin" ]
-  set ANDROID_SDK_PATH $HOME/Library/Android/sdk
-  set -x PATH $ANDROID_SDK_PATH/platform-tools $ANDROID_SDK_PATH/tools/bin $PATH
-end
 
 # alias
 alias g='git'
