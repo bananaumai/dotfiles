@@ -24,3 +24,5 @@
   autosquash = true
 [include]
   path = ~/.gitconfig.local
+[url "ssh://git@github.com/moderepo/"]
+	insteadOf = https://github.com/moderepo/

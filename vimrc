@@ -48,6 +48,21 @@ noremap k gk
 noremap gj j
 noremap gk k
 
+" カーソル移動
+imap <C-b> <Left>
+imap <C-h> <Left>
+imap <C-f> <Right>
+imap <C-l> <Right>
+imap <C-p> <Up>
+imap <C-k> <Up>
+imap <C-n> <Down>
+imap <C-j> <Down>
+imap <C-a> <Home>
+imap <C-e> <End>
+
+" エスケープ
+imap <C-S-e> <Esc>
+
 " Ex-modeでの<C-p><C-n>をzshのヒストリ補完っぽくする
 cnoremap <C-p> <Up>
 cnoremap <Up>  <C-p>

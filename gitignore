@@ -8,6 +8,7 @@ Session.vim
 *.ipr
 *.iws
 .idea/
+.run/*.xml
 
 # vscode
 .vscode
@@ -21,6 +22,7 @@ Session.vim
 
 # Go
 .go-version
+bananaumai_*.go
 
 # Node
 .node-version
