@@ -18,6 +18,7 @@ set -x PATH $HOME/.pyenv/shims $PATH
 pyenv init - | source
 
 # node setting
+set -x PATH $HOME/.nodenv/bin $PATH
 set -x PATH $HOME/.nodenv/shims $PATH
 status --is-interactive; and source (nodenv init -|psub)
 
