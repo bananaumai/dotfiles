@@ -1,3 +1,6 @@
+# starship
+starship init fish | source
+
 # basic path setting
 set -x PATH $HOME/bin $HOME/.local/bin $PATH
 
