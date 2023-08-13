@@ -10,3 +10,5 @@ if status is-interactive
     bind \cr 'peco_select_history (commandline -b)'
   end
 end
+
+source $HOME/.config/fish/local.fish
