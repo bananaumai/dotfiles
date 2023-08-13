@@ -10,8 +10,12 @@ Session.vim
 .idea/
 .run/*.xml
 
-# vscode
+# VSCode
 .vscode
+
+# Python
+venv
+.venv
 
 # Ruby
 .bundle/
@@ -22,28 +26,38 @@ Session.vim
 
 # Go
 .go-version
-bananaumai_*.go
+**_bnn.go
 
 # Node
 .node-version
+node_modules
 
-# Direnv
+# env
 .envrc
 .env
 
-# misc
-*.log.gz
-*.orig
+# asdf
+.tool-versions
+
+# AWS
+.aws-sam
+
+# Mac
 .DS_Store
 .DS_Store?
 .Spotlight-V100
 .Trashes
-._*
-tags
-.tags
 Icon?
 Thumbs.db
 ehthumbs.db
+
+# Misc
+*.log.gz
+*.orig
+._*
+tags
+.tags
 *~*
 .cache
 nohup.out
+**/bnn_sandbox/**
