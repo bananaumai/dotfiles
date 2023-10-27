@@ -28,8 +28,3 @@ if [[ `which peco` ]]; then
   zle -N peco-select-history
   bindkey "^r" peco-select-history
 fi
-
-if [[ `type brew` ]]; then
-  FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
-  autoload -Uz compinit
-fi
